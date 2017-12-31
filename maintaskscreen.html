@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    color:antiquewhite;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: darkgrey;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: royalblue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">
+      <h1>Main Task Name</h1>
+    </div>
+    <div class="item2">
+        <h2>Menu</h2>
+        <ul>
+            <li>Add Task</li>
+            <li>Add Team Member</li>
+        </ul>
+    </div>
+    <div class="item3">
+        <h2>Sub Task</h2>
+        <ul>
+            <li>Task One</li>
+            <li>Task Two</li>
+            <li>Task Three</li>
+            <li>Task Four</li>
+            <li>Task Five</li>
+        </ul>
+    </div>  
+    <div class="item4">
+        <h2>Team Members</h2>
+        <ul>
+            <li>Team Member One</li>
+            <li>Team Member Two</li>
+            <li>Team Member Three</li>
+            <li>Team Member Four</li>
+            <li>Team Member Five</li>
+        </ul>
+    </div>
+  <div class="item5">Messages</div>
+</div>
+
+</body>
+</html>
+
